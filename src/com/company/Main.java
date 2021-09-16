@@ -285,9 +285,18 @@ public class Main {
                     visa++;
                 }
             }
-            if (arr[i].length() == 16) {
-                for (int j = 0; j < arr.length; j++) {
-
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 51; j < 56; j++) {
+                if (Integer.parseInt(arr[i].substring(0,2)) == j) {
+                    mastercard++;
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 2221; j < 2721; j++) {
+                if (Integer.parseInt(arr[i].substring(0,4)) == j) {
+                    mastercard++;
                 }
             }
         }
